@@ -1,0 +1,144 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1023" />
+  <meta name="description" content="SWOT-анализ рекламного рынка России: сильные и слабые стороны, возможности и угрозы. Данные на 8 ноября 2026 года." />
+  <title>SWOT-анализ рынка рекламы РФ — 2026</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg:#080d1c; --surface:#111b31; --surface2:#17233c;
+      --text:#f5f7ff; --muted:#aab6cb; --line:rgba(183,205,240,.15);
+      --s:#44d6a7; --w:#ffbf72; --o:#8aa8ff; --t:#ff7b91;
+      --radius:22px; --max:1200px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;overflow-x:hidden}
+    body::before{content:"";pointer-events:none;position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 10% 2%,rgba(74,103,214,.2),transparent 42%),radial-gradient(ellipse at 90% 25%,rgba(60,183,166,.12),transparent 45%)}
+    a{color:inherit} a:focus-visible,button:focus-visible{outline:3px solid #e0edff;outline-offset:4px}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .hero{padding:76px 0 43px;position:relative}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(140,166,255,.32);background:rgba(110,140,240,.1);color:#bdd0ff;border-radius:99px;padding:7px 14px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:#73e3cf;box-shadow:0 0 12px #73e3cf}
+    h1{max-width:1040px;margin:25px 0 22px;font-size:clamp(2.6rem,6.2vw,5.45rem);line-height:1.06;font-weight:860;letter-spacing:-.055em}
+    .gradient-text{background:linear-gradient(105deg,#fff 4%,#c1ccff 40%,#70ead7 88%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:850px;color:var(--muted);font-size:clamp(1rem,1.5vw,1.2rem);margin:0 0 24px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .pill{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);padding:8px 14px;color:#ccd6e9;font-size:.85rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:27px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:43px;border:1px solid rgba(153,180,231,.25);padding:10px 17px;border-radius:12px;text-decoration:none;font-weight:730;font-size:.9rem;background:#202d4b;cursor:pointer;color:#fff;transition:transform .22s,background .22s}
+    .btn.primary{background:linear-gradient(120deg,#6d82f5,#458fbc);border-color:transparent}.btn:hover{transform:translateY(-3px);background:#2a3b62}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:30px 0 20px}
+    .section-head h2{font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.035em;line-height:1.2;margin:0}
+    .section-head p{margin:7px 0 0;color:var(--muted)}
+    .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:24px 0 52px}
+    .metric{background:linear-gradient(155deg,rgba(30,44,75,.93),rgba(15,25,45,.9));border:1px solid var(--line);border-radius:18px;padding:22px 18px;min-width:0}
+    .metric .value{font-size:clamp(1.48rem,2.5vw,2.2rem);font-weight:850;line-height:1.12;letter-spacing:-.045em;color:#f3f7ff}
+    .metric .label{color:var(--muted);font-size:.86rem;margin-top:9px;line-height:1.4}.metric small{display:block;color:#7e94b9;font-size:.76rem;margin-top:9px}
+    .swot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .panel{--accent:#8aa8ff;position:relative;overflow:hidden;border-radius:var(--radius);background:linear-gradient(155deg,rgba(23,35,60,.94),rgba(14,23,42,.97));border:1px solid var(--line);box-shadow:0 18px 55px rgba(0,0,0,.15);padding:29px;min-width:0}
+    .panel::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--accent),transparent 92%)}
+    .panel.s{--accent:var(--s)}.panel.w{--accent:var(--w)}.panel.o{--accent:var(--o)}.panel.t{--accent:var(--t)}
+    .panel-title{display:flex;gap:15px;align-items:center;margin:0 0 23px}
+    .letter{flex-shrink:0;width:55px;height:55px;border-radius:16px;display:grid;place-items:center;font-size:1.75rem;font-weight:900;background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+    .panel-title h3{font-size:1.42rem;letter-spacing:-.035em;line-height:1.2;margin:0}.panel-title p{margin:4px 0 0;color:var(--muted);font-size:.85rem}
+    .skill-list{display:grid;gap:12px}
+    .skill{background:rgba(255,255,255,.028);border:1px solid rgba(196,211,237,.1);padding:18px;border-radius:15px;transition:transform .28s ease,border-color .28s,box-shadow .28s,background .28s}
+    .skill:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 48%,transparent);background:color-mix(in srgb,var(--accent) 6%,#17233c);box-shadow:0 15px 24px rgba(0,0,0,.18)}
+    .skill h4{font-size:1rem;line-height:1.35;margin:0 0 9px;color:#f6f9ff;display:flex;align-items:baseline;gap:10px}
+    .num{font-size:.77rem;font-weight:900;letter-spacing:.07em;color:var(--accent)}
+    .skill p{margin:0;color:#bec9da;font-size:.91rem;line-height:1.65}
+    .skill strong{color:#f7f9ff;font-weight:750}
+    .source{display:inline-flex;color:var(--accent);font-weight:690;font-size:.81rem;text-decoration:none;align-items:center;gap:5px;margin-top:10px}
+    .source:hover{text-decoration:underline}.source::after{content:"↗"}
+    .cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:19px}
+    .case{border:1px solid var(--line);background:linear-gradient(160deg,#172641,#101a30);border-radius:17px;padding:23px;position:relative}
+    .case::before{content:"";display:block;width:33px;height:4px;border-radius:5px;background:linear-gradient(90deg,#80a6ff,#5cddc9);margin-bottom:16px}
+    .case h3{margin:0 0 10px;font-size:1.09rem}.case p{margin:0;color:#bdc9de;font-size:.9rem}.case .tagline{margin-top:13px;color:#89e2d5;font-weight:750;font-size:.8rem}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}
+    .tag{padding:9px 14px;border-radius:999px;font-size:.85rem;border:1px solid rgba(127,163,238,.28);color:#d9e5ff;background:rgba(79,115,187,.11);transition:background .2s,transform .2s}
+    .tag:hover{transform:translateY(-2px);background:rgba(97,134,206,.24)}
+    .note{background:rgba(128,158,217,.07);border:1px solid rgba(148,172,218,.18);border-left:3px solid #8ba9ff;padding:17px 20px;border-radius:0 14px 14px 0;color:#b9c9de;margin-top:25px;font-size:.9rem}
+    .footer{border-top:1px solid var(--line);padding:27px 0 38px;margin-top:60px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#93a4c2;font-size:.83rem}
+    .reveal{opacity:0;transform:translateY(15px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:960px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.cases{grid-template-columns:1fr}}
+    @media(max-width:740px){.hero{padding-top:46px}.swot-grid{grid-template-columns:1fr}.panel{padding:21px}.section-head{margin-top:20px}.metric{padding:19px 14px}.wrap{width:min(var(--max),calc(100% - 28px))}}
+    @media(max-width:420px){h1{font-size:2.5rem}.metrics{gap:9px}.metric .value{font-size:1.4rem}.pill{font-size:.76rem}.btn{width:100%}.panel-title h3{font-size:1.2rem}.letter{width:49px;height:49px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+    @media print{ :root{color-scheme:light;--text:#132035;--muted:#53627a;--line:#d9e1ec}body{background:#fff;color:#16243b}body::before{display:none}.hero{padding-top:15px}.gradient-text{background:none;color:#172745}.panel,.metric,.case{background:#fff;border-color:#d5deea;box-shadow:none}.skill{background:#fff;border-color:#dee5ee}.skill h4,.skill strong,.metric .value{color:#16243b}.skill p,.case p{color:#465770}.panel-title h3,.section-head h2,.case h3{color:#16243b}.reveal{opacity:1;transform:none}.hero-actions{display:none}.swot-grid{gap:14px}.panel{break-inside:avoid}.skill{break-inside:avoid}a{color:#1e51a4}}
+  </style>
+</head>
+<body>
+  <header class="hero wrap">
+    <div class="eyebrow">Отраслевой обзор · Россия</div>
+    <h1><span class="gradient-text">SWOT-анализ</span><br>рынка рекламы РФ</h1>
+    <p class="lead">Системная оценка сильных и слабых сторон рекламной отрасли, а также возможностей роста и внешних угроз.</p>
+    <div class="meta"><span class="pill">Актуально на 8 ноября 2026 года</span><span class="pill">Итоги 2025 года + I квартал / I полугодие 2026</span><span class="pill">Источники: АКАР · АРИР · законодательство РФ</span></div>
+    <nav class="hero-actions" aria-label="Навигация по отчету"><a class="btn primary" href="#analysis">Смотреть SWOT ↓</a><a class="btn" href="#cases">Примеры применения</a><button class="btn" onclick="window.print()" type="button">Печать / PDF ↗</button></nav>
+  </header>
+  <main class="wrap">
+    <section aria-label="Ключевые показатели">
+      <div class="metrics">
+        <article class="metric reveal"><div class="value">981,6 млрд ₽</div><div class="label">Рекламные бюджеты в медиа</div><small>АКАР · 2025 год</small></article>
+        <article class="metric reveal"><div class="value">+8,5%</div><div class="label">Рост рекламного рынка</div><small>АКАР · 2025 год</small></article>
+        <article class="metric reveal"><div class="value">78,7%</div><div class="label">Доля performance-рекламы в традиционном интернет-сегменте</div><small>АРИР · I полугодие 2026</small></article>
+        <article class="metric reveal"><div class="value">580 млрд ₽</div><div class="label">Retail media без кликаут-баннеров</div><small>АРИР · 2025 год</small></article>
+      </div>
+    </section>
+    <section id="analysis" aria-labelledby="analysis-title">
+      <div class="section-head"><div><h2 id="analysis-title">Матрица SWOT</h2><p>По три ключевых фактора для каждой категории</p></div></div>
+      <div class="swot-grid">
+        <article class="panel s reveal" aria-labelledby="s-heading"><div class="panel-title"><span class="letter" aria-hidden="true">S</span><div><h3 id="s-heading">Сильные стороны</h3><p>Strengths · внутренние преимущества рынка</p></div></div><div class="skill-list">
+          <div class="skill"><h4><span class="num">01</span>Крупный объём рынка</h4><p>По оценке АКАР, рекламные бюджеты в медиа за 2025 год составили <strong>981,6 млрд руб.</strong>, увеличившись на <strong>8,5%</strong>. Это значительная база спроса на размещение рекламы, производство контента и агентские услуги.</p><a class="source" href="https://akarussia.ru/volumes/obem-rynka-marketingovyh-kommunikacij-v-2025-godu/" target="_blank" rel="noopener noreferrer">АКАР · источник</a></div>
+          <div class="skill"><h4><span class="num">02</span>Разнообразие рекламных каналов</h4><p>Рынок включает интернет-сервисы, телевидение и онлайн-видео, наружную рекламу, аудио и издательские медиа. Это позволяет выбирать инструменты под разные задачи: узнаваемость, привлечение покупателей и локальное продвижение.</p><a class="source" href="https://akarussia.ru/volumes/obem-rynka-marketingovyh-kommunikacij-v-2025-godu/" target="_blank" rel="noopener noreferrer">АКАР · источник</a></div>
+          <div class="skill"><h4><span class="num">03</span>Развитый performance-сегмент</h4><p>По данным АРИР, performance-реклама составила <strong>78,7% традиционного интернет-сегмента</strong> за I полугодие 2026 года. Для рекламодателей это создаёт широкие возможности управления кампаниями по обращениям и покупкам.</p><a class="source" href="https://interactivead.ru/news/obem-tradiczionnyh-segmentov-rynka-reklamy-i-prodvizheniya-v-internete-v-yanvare-iyune-vyros-na-11-do-301-mlrd-rublej/" target="_blank" rel="noopener noreferrer">АРИР · источник</a></div>
+        </div></article>
+        <article class="panel w reveal" aria-labelledby="w-heading"><div class="panel-title"><span class="letter" aria-hidden="true">W</span><div><h3 id="w-heading">Слабые стороны</h3><p>Weaknesses · ограничения отрасли</p></div></div><div class="skill-list">
+          <div class="skill"><h4><span class="num">01</span>Несопоставимость статистики</h4><p>АКАР и АРИР используют разные границы рынка и классификации; методики пересматриваются. Это затрудняет оценку долей каналов и сравнение динамики.</p><a class="source" href="https://akarussia.ru/volumes/obem-rossijskogo-reklamnogo-rynka-v-janvare-marte-2026-goda-prevysil-220-mlrd-rublej/" target="_blank" rel="noopener noreferrer">АКАР · источник</a></div>
+          <div class="skill"><h4><span class="num">02</span>Сложность оценки новых форматов</h4><p>АРИР отмечает недостаток исследований и измерений в рекламе на подключённых к интернету телевизорах — Connected TV. Рекламодателю сложнее независимо оценить вклад таких размещений в результат.</p><a class="source" href="https://interactivead.ru/news/arir-obem-rossijskogo-rynka-reklamy-i-prodvizheniya-v-internete-v-2025-godu-vyros-na-28-do-1569-trln-rublej/" target="_blank" rel="noopener noreferrer">АРИР · источник</a></div>
+          <div class="skill"><h4><span class="num">03</span>Неравномерность регионального спроса</h4><p>В I квартале 2026 года региональный рекламный рынок без московского регионального рынка сократился примерно на <strong>1%</strong>, тогда как общероссийский вырос на <strong>5%</strong>. Федеральный рост не гарантирует устойчивого спроса в конкретном городе.</p><a class="source" href="https://akarussia.ru/volumes/obem-rossijskogo-reklamnogo-rynka-v-janvare-marte-2026-goda-prevysil-220-mlrd-rublej/" target="_blank" rel="noopener noreferrer">АКАР · источник</a></div>
+        </div></article>
+        <article class="panel o reveal" aria-labelledby="o-heading"><div class="panel-title"><span class="letter" aria-hidden="true">O</span><div><h3 id="o-heading">Возможности</h3><p>Opportunities · точки роста</p></div></div><div class="skill-list">
+          <div class="skill"><h4><span class="num">01</span>Развитие retail media</h4><p>По оценке АРИР, в 2025 году сегмент рекламы на торговых площадках без кликаут-баннеров достиг <strong>580 млрд руб.</strong>, увеличившись на <strong>58%</strong>. Это открывает возможности для продвижения товаров и услуг по управлению рекламой продавцов.</p><a class="source" href="https://interactivead.ru/news/arir-obem-rossijskogo-rynka-reklamy-i-prodvizheniya-v-internete-v-2025-godu-vyros-na-28-do-1569-trln-rublej/" target="_blank" rel="noopener noreferrer">АРИР · источник</a></div>
+          <div class="skill"><h4><span class="num">02</span>Расширение онлайн-видеорекламы</h4><p>В I полугодии 2026 года брендинговая интернет-видеореклама выросла на <strong>29%</strong>, до <strong>24,8 млрд руб.</strong> Перспективны создание видеоконтента, медиапланирование и оценка результатов кампаний.</p><a class="source" href="https://interactivead.ru/news/obem-tradiczionnyh-segmentov-rynka-reklamy-i-prodvizheniya-v-internete-v-yanvare-iyune-vyros-na-11-do-301-mlrd-rublej/" target="_blank" rel="noopener noreferrer">АРИР · источник</a></div>
+          <div class="skill"><h4><span class="num">03</span>Цифровизация наружной рекламы</h4><p>Бюджеты на цифровые наружные носители в 2025 году увеличились на <strong>28%</strong>, до <strong>69,8 млрд руб.</strong> Это создаёт возможности для развития размещений на экранах и сопутствующих аналитических услуг.</p><a class="source" href="https://akarussia.ru/volumes/obem-rynka-marketingovyh-kommunikacij-v-2025-godu/" target="_blank" rel="noopener noreferrer">АКАР · источник</a></div>
+        </div></article>
+        <article class="panel t reveal" aria-labelledby="t-heading"><div class="panel-title"><span class="letter" aria-hidden="true">T</span><div><h3 id="t-heading">Угрозы</h3><p>Threats · внешние риски</p></div></div><div class="skill-list">
+          <div class="skill"><h4><span class="num">01</span>Замедление роста рынка</h4><p>По данным АКАР, динамика рынка снизилась с <strong>24% в 2024 году</strong> до <strong>8,5% в 2025 году</strong> и <strong>5% в I квартале 2026 года</strong>. Для участников отрасли это означает риск усиления конкуренции за бюджеты заказчиков.</p><a class="source" href="https://akarussia.ru/volumes/obem-rossijskogo-reklamnogo-rynka-v-janvare-marte-2026-goda-prevysil-220-mlrd-rublej/" target="_blank" rel="noopener noreferrer">АКАР · источник</a></div>
+          <div class="skill"><h4><span class="num">02</span>Регуляторная нагрузка</h4><p>Закон предусматривает обязательные отчисления за интернет-рекламу в размере <strong>3% от установленной базы</strong> для соответствующих участников. Также действуют запреты на рекламу на определённых категориях ресурсов. Это требует проверки договорной схемы и допустимости размещений.</p><a class="source" href="https://www.consultant.ru/document/cons_doc_LAW_58968/f5499f6a99f4f1011e473eae3412f6c7f0262387/" target="_blank" rel="noopener noreferrer">КонсультантПлюс · норма</a></div>
+          <div class="skill"><h4><span class="num">03</span>Медиаинфляция</h4><p>Рост стоимости размещений может увеличивать расходы без сопоставимого прироста продаж. В частности, АРИР отмечает влияние медиаинфляции на рост инфлюенсер-маркетинга: денежная динамика выше реального роста объёма размещений.</p><a class="source" href="https://interactivead.ru/news/arir-obem-rossijskogo-rynka-reklamy-i-prodvizheniya-v-internete-v-2025-godu-vyros-na-28-do-1569-trln-rublej/" target="_blank" rel="noopener noreferrer">АРИР · источник</a></div>
+        </div></article>
+      </div>
+    </section>
+    <section id="cases" aria-labelledby="cases-heading" style="margin-top:57px"><div class="section-head"><div><h2 id="cases-heading">Примеры применения анализа</h2><p>Иллюстративные сценарии, а не подтверждённые кейсы реальных компаний</p></div></div>
+      <div class="cases"><article class="case reveal"><h3>Бренд на маркетплейсе</h3><p>Тестировать продвижение через retail media, сопоставляя стоимость привлечения заказа и маржинальность товара.</p><div class="tagline">Возможность · Retail media</div></article>
+      <article class="case reveal"><h3>Региональное агентство</h3><p>Диверсифицировать клиентский портфель и каналы продаж, не полагаясь исключительно на общероссийский рост рынка.</p><div class="tagline">Слабая сторона · Региональный спрос</div></article>
+      <article class="case reveal"><h3>Федеральный рекламодатель</h3><p>Проводить замеры эффективности онлайн-видео и цифровой наружной рекламы, учитывая медиаинфляцию.</p><div class="tagline">Возможность + угроза</div></article></div>
+    </section>
+    <section aria-labelledby="tools-heading" style="margin-top:56px"><div class="section-head"><div><h2 id="tools-heading">Инструменты и каналы</h2><p>Направления, упомянутые в анализе, в формате тегов</p></div></div><div class="tags"><span class="tag">Performance</span><span class="tag">Retail media</span><span class="tag">Онлайн-видео</span><span class="tag">Connected TV</span><span class="tag">Digital Out-of-Home</span><span class="tag">Наружная реклама</span><span class="tag">Телевидение</span><span class="tag">Аудио</span><span class="tag">Издательские медиа</span><span class="tag">Инфлюенсер-маркетинг</span><span class="tag">Медиапланирование</span><span class="tag">Аналитика эффективности</span></div>
+      <aside class="note"><strong>Методологическое примечание.</strong> SWOT относится к отрасли в целом. Последствия для бизнеса и примеры применения являются аналитическими выводами, а не установленными фактами о конкретных компаниях. Данные разных организаций и сегментов не следует суммировать без проверки методологии. Текст и показатели воспроизведены по материалу, предоставленному для оформления; независимая проверка источников здесь не проводилась.</aside>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>SWOT-анализ рынка рекламы Российской Федерации</span><span>Срез данных: 8 ноября 2026 года</span></footer>
+  <script>
+    (() => {
+      const items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(el => el.classList.add('visible'));
+        return;
+      }
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      items.forEach(el => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
